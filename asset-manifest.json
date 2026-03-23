@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/aer/static/css/main.353e0422.css",
-    "main.js": "/aer/static/js/main.36cbef90.js",
-    "static/media/Knit1-2.png": "/aer/static/media/Knit1-2.dc65f3124e1a5df5792a.png",
+    "main.css": "/aer/static/css/main.d590f953.css",
+    "main.js": "/aer/static/js/main.29ea2ae8.js",
+    "static/media/knit1-2.png": "/aer/static/media/knit1-2.dc65f3124e1a5df5792a.png",
     "static/media/scarf1-2.png": "/aer/static/media/scarf1-2.f68fb60ede8fd2235f27.png",
     "static/media/pants1-2.png": "/aer/static/media/pants1-2.4e0344ab8a619df48367.png",
-    "static/media/Knit1-1.png": "/aer/static/media/Knit1-1.3c9f6e65b992067ca5ec.png",
+    "static/media/knit1-1.png": "/aer/static/media/knit1-1.3c9f6e65b992067ca5ec.png",
     "static/media/denim1-2.png": "/aer/static/media/denim1-2.0b7b22eb3e6886221b85.png",
     "static/media/scarf1-1.png": "/aer/static/media/scarf1-1.d04cd236257c66d792af.png",
     "static/media/jogger1-2.png": "/aer/static/media/jogger1-2.29bf4fdae4aff777e859.png",
     "static/media/hero-img.png": "/aer/static/media/hero-img.cc3f7a9d65ed8ab42c06.png",
+    "static/media/lookbook.png": "/aer/static/media/lookbook.6a4865e29515b4db69fb.png",
     "static/media/tee-model.png": "/aer/static/media/tee-model.a1fd83faaea6f519a77f.png",
     "static/media/hero.png": "/aer/static/media/hero.513ced8db58cc1ef16e3.png",
     "static/media/jacket1-2.png": "/aer/static/media/jacket1-2.2bd40782a786cc4ad5f2.png",
@@ -18,9 +19,8 @@
     "static/media/shirt-model.png": "/aer/static/media/shirt-model.86edc1d8ef933d65a510.png",
     "static/media/shirt1-2.png": "/aer/static/media/shirt1-2.6e01f327fd411823afcf.png",
     "static/media/jacket1-1.png": "/aer/static/media/jacket1-1.13d0e36bd8e9a6ddab0a.png",
-    "static/media/Knit-model.png": "/aer/static/media/Knit-model.f3ffe65ceffb5f98fdf3.png",
+    "static/media/knit-model.png": "/aer/static/media/knit-model.f3ffe65ceffb5f98fdf3.png",
     "static/media/scarf-model.png": "/aer/static/media/scarf-model.2f73b6a70f89a26319da.png",
-    "static/media/lookbook.png": "/aer/static/media/lookbook.1ae61934ab303fe7487c.png",
     "static/media/pants-model.png": "/aer/static/media/pants-model.edfd09bb3a62121561c1.png",
     "static/media/jacket-model.png": "/aer/static/media/jacket-model.f0d5f665551e503549d1.png",
     "static/media/jogger-model.png": "/aer/static/media/jogger-model.786affef0a6d53d0abf8.png",
@@ -37,11 +37,11 @@
     "static/media/tee1-2.png": "/aer/static/media/tee1-2.f4d63985c3a408b57013.png",
     "static/media/tee1-1.png": "/aer/static/media/tee1-1.6b719965e3dc65b5665f.png",
     "index.html": "/aer/index.html",
-    "main.353e0422.css.map": "/aer/static/css/main.353e0422.css.map",
-    "main.36cbef90.js.map": "/aer/static/js/main.36cbef90.js.map"
+    "main.d590f953.css.map": "/aer/static/css/main.d590f953.css.map",
+    "main.29ea2ae8.js.map": "/aer/static/js/main.29ea2ae8.js.map"
   },
   "entrypoints": [
-    "static/css/main.353e0422.css",
-    "static/js/main.36cbef90.js"
+    "static/css/main.d590f953.css",
+    "static/js/main.29ea2ae8.js"
   ]
 }
