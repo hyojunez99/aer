@@ -1,0 +1,37 @@
+:root {
+  // 기본 컬러
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  // 그레이 스케일
+
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e5e5e5;
+  --color-gray-300: #d4d4d4;
+  --color-gray-400: #a3a3a3;
+  --color-gray-500: #737373;
+  --color-gray-600: #525252;
+  --color-gray-700: #404040;
+  --color-gray-800: #262626;
+  --color-gray-900: #171717;
+
+  // 텍스트 컬러
+
+  --text-primary: #000000;
+  --text-secondary: #525252;
+  --text-muted: #a3a3a3;
+  --text-inverse: #ffffff;
+
+  // 배경 컬러
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-dark: #000000;
+
+  // 포인트 컬러
+  --color-accent: #eae6e1;
+
+  // 보더 컬러
+  --border-light: #e5e5e5;
+  --border-dark: #262626;
+}

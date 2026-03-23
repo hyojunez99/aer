@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Signature Leather Jacket",
+    "category": "outer",
+    "collection": "2026 SS",
+    "price": 890000,
+    "color": ["black"],
+    "image": ["jacket-model.png", "jacket1-1.png", "jacket1-2.png"],
+    "desc": "Premium lambskin leather with minimal silhouette."
+  },
+  {
+    "id": 2,
+    "name": "Wool Blend Over Coat",
+    "category": "outer",
+    "collection": "2026 FW",
+    "price": 720000,
+    "color": ["charcoal"],
+    "image": ["coat-model.png", "coat1-1.png", "coat1-2.png"],
+    "desc": "Structured wool coat with a refined oversized fit."
+  },
+  {
+    "id": 4,
+    "name": "Essential Cotton Shirt",
+    "category": "top",
+    "collection": "2026 SS",
+    "price": 180000,
+    "color": ["white", "light gray"],
+    "image": ["shirt-model.png", "shirt1-1.png", "shirt1-2.png"],
+    "desc": "Crisp cotton shirt designed for everyday luxury."
+  },
+  {
+    "id": 7,
+    "name": "Wide Fit Trousers",
+    "category": "bottom",
+    "collection": "2026 SS",
+    "price": 320000,
+    "color": ["black"],
+    "image": ["pants-model.png", "pants1-1.png", "pants1-2.png"],
+    "desc": "Wide silhouette trousers with fluid drape."
+  },
+  {
+    "id": 10,
+    "name": "Premium Cashmere Scarf",
+    "category": "accessory",
+    "collection": "2026 FW",
+    "price": 190000,
+    "color": ["beige", "black"],
+    "image": ["scarf-model.png", "scarf1-1.png", "scarf1-2.png"],
+    "desc": "Luxurious cashmere scarf for timeless styling."
+  }
+]

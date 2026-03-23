@@ -1,0 +1,53 @@
+@use "./variables";
+@use "./font" as *;
+@use "./mixin" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  @include font-body;
+}
+
+body {
+  @include font-body;
+  overflow-x: hidden;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+
+  letter-spacing: -0.01em;
+}
+
+// 텍스트 선택 스타일
+::selection {
+  background: var(--color-black);
+  color: var(--color-white);
+}

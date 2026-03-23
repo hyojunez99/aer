@@ -1,0 +1,73 @@
+@use "../../assets/scss/mixin" as *;
+@use "../../assets/scss/font" as *;
+
+#footer {
+  padding: 100px 40px 40px;
+  background: #111;
+  color: #fff;
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+  }
+
+  .footer-left {
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  }
+
+  .footer-center {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    a {
+      font-size: 0.9rem;
+      color: #ccc;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #fff;
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  .footer-right {
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 80px;
+    text-align: center;
+
+    p {
+      font-size: 0.8rem;
+      color: #777;
+    }
+  }
+}

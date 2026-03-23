@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Signature Leather Jacket",
+    "category": "outer",
+    "collection": "2026 SS",
+    "price": 890000,
+    "color": ["black"],
+    "image": ["jacket-model.png", "jacket1-1.png", "jacket1-2.png"],
+    "desc": "Premium lambskin leather with minimal silhouette."
+  },
+  {
+    "id": 2,
+    "name": "Wool Blend Over Coat",
+    "category": "outer",
+    "collection": "2026 FW",
+    "price": 720000,
+    "color": ["charcoal"],
+    "image": ["coat-model.png", "coat1-1.png", "coat1-2.png"],
+    "desc": "Structured wool coat with a refined oversized fit."
+  },
+  {
+    "id": 3,
+    "name": "Minimal Blazer",
+    "category": "outer",
+    "collection": "2026 SS",
+    "price": 540000,
+    "color": ["black"],
+    "image": ["blazer-model.png", "blazer1-1.png", "blazer1-2.png"],
+    "desc": "Clean-cut blazer tailored for modern elegance."
+  },
+  {
+    "id": 4,
+    "name": "Essential Cotton Shirt",
+    "category": "top",
+    "collection": "2026 SS",
+    "price": 180000,
+    "color": ["white", "light gray"],
+    "image": ["shirt-model.png", "shirt1-1.png", "shirt1-2.png"],
+    "desc": "Crisp cotton shirt designed for everyday luxury."
+  },
+  {
+    "id": 5,
+    "name": "Silk Blend Knit",
+    "category": "top",
+    "collection": "2026 FW",
+    "price": 260000,
+    "color": ["beige", "black"],
+    "image": ["Knit-model.png", "knit1-1.png", "knit1-2.png"],
+    "desc": "Soft knitwear crafted with silk blend yarn."
+  },
+  {
+    "id": 6,
+    "name": "Oversized Tee",
+    "category": "top",
+    "collection": "2026 SS",
+    "price": 120000,
+    "color": ["black", "white"],
+    "image": ["tee-model.png", "tee1-1.png", "tee1-2.png"],
+    "desc": "Relaxed fit t-shirt with subtle graphic detail."
+  },
+  {
+    "id": 7,
+    "name": "Wide Fit Trousers",
+    "category": "bottom",
+    "collection": "2026 SS",
+    "price": 320000,
+    "color": ["black"],
+    "image": ["pants-model.png", "pants1-1.png", "pants1-2.png"],
+    "desc": "Wide silhouette trousers with fluid drape."
+  },
+  {
+    "id": 8,
+    "name": "Tailored Black Denim",
+    "category": "bottom",
+    "collection": "2026 FW",
+    "price": 280000,
+    "color": ["black"],
+    "image": ["denim-model.png", "denim1-1.png", "denim1-2.png"],
+    "desc": "Refined denim with a tailored slim fit."
+  },
+  {
+    "id": 9,
+    "name": "Minimal Jogger Pants",
+    "category": "bottom",
+    "collection": "2026 SS",
+    "price": 210000,
+    "color": ["black"],
+    "image": ["jogger-model.png", "jogger1-1.png", "jogger1-2.png"],
+    "desc": "Comfort-focused joggers with a clean aesthetic."
+  },
+  {
+    "id": 10,
+    "name": "Premium Cashmere Scarf",
+    "category": "accessory",
+    "collection": "2026 FW",
+    "price": 190000,
+    "color": ["beige", "black"],
+    "image": ["scarf-model.png", "scarf1-1.png", "scarf1-2.png"],
+    "desc": "Luxurious cashmere scarf for timeless styling."
+  }
+]
