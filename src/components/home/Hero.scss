@@ -29,6 +29,8 @@
 
   .hero-text {
     position: relative;
+    bottom: 80px;
+    left: 80px;
     z-index: 2;
     height: 100%;
     padding: 0 5rem;
@@ -38,8 +40,29 @@
       @include font-title;
       color: var(--text-inverse);
       max-width: 900px;
-      line-height: 1.05;
+      line-height: 1;
       overflow: hidden;
+      letter-spacing: -0.03em;
+      &:first-child {
+        opacity: 0.6;
+      }
+      span {
+        display: inline-block;
+      }
+    }
+  }
+  .scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    span {
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      color: var(--text-inverse);
+      opacity: 0.7;
     }
   }
 }

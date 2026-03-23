@@ -80,3 +80,15 @@ export const heroFade = (targets) => {
     },
   );
 };
+
+export const heroParallax = (target) => {
+  gsap.to(target, {
+    y: 80,
+    ease: "none",
+    scrollTrigger: {
+      trigger: target,
+      start: "top top",
+      scrub: true,
+    },
+  });
+};

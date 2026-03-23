@@ -71,10 +71,10 @@
       width: 100%;
       aspect-ratio: 3 / 4;
       object-fit: cover;
-
       transition:
         transform 0.6s ease,
         filter 0.6s ease;
+        
     }
 
     &:hover img {

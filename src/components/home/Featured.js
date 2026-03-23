@@ -13,16 +13,16 @@ const Featured = () => {
   useGsap(() => {
     const el = ref.current;
 
-    // 🔥 hero 텍스트
+    // hero 텍스트
     fadeUp(el.querySelectorAll(".hero-text > *"));
 
-    // 🔥 상품 리스트
+    // 상품 리스트
     staggerItem(el.querySelectorAll(".featured-item"));
 
-    // 🔥 이미지
+    // 이미지
     scaleImg(el.querySelectorAll(".scale-img"));
 
-    // 🔥 CTA
+    // CTA
     fadeUp(el.querySelectorAll(".featured-cta"));
   });
 
