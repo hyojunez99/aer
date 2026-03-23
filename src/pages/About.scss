@@ -4,37 +4,34 @@
 
 #about {
   padding: 180px 40px;
-  background: #fff;
+  background: var(--bg-primary);
 
   .about-inner {
     max-width: 1100px;
     margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+    @include flex-layout(column, center, center, 100px);
     text-align: center;
   }
 
   .about-hero {
     h2 {
-      font-size: 3rem;
-      font-weight: 600;
-      letter-spacing: -0.03em;
+      @include font-display;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
     }
 
     p {
-      margin-top: 10px;
-      color: #888;
-      font-size: 1rem;
+      @include font-sub;
+      margin-top: 12px;
+      color: var(--text-muted);
     }
   }
 
   .about-text {
     p {
-      font-size: 1.1rem;
+      @include font-body;
       line-height: 1.8;
-      color: #555;
+      color: var(--text-secondary);
       max-width: 700px;
       margin: 0 auto;
     }
@@ -63,19 +60,23 @@
     flex-wrap: wrap;
 
     span {
-      font-size: 0.9rem;
-      letter-spacing: 0.2em;
-      color: #000;
+      @include font-caption;
+      color: var(--text-primary);
       position: relative;
+      transition: opacity 0.3s ease;
 
       &::after {
         content: "";
         display: block;
         width: 0%;
         height: 1px;
-        background: #000;
+        background: var(--color-black);
         margin-top: 6px;
         transition: width 0.3s ease;
+      }
+
+      &:hover {
+        opacity: 0.7;
       }
 
       &:hover::after {
@@ -86,15 +87,31 @@
 
   .about-cta {
     a {
+      @include font-link;
       display: inline-block;
       padding: 14px 36px;
-      border: 1px solid #000;
-      font-size: 0.9rem;
-      letter-spacing: 0.1em;
-      transition: all 0.3s ease;
+      border: 1px solid var(--border-dark);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--color-black);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease;
+        z-index: -1;
+      }
+
+      &:hover::before {
+        transform: scaleX(1);
+      }
+
       &:hover {
-        background: #000;
-        color: #fff;
+        color: var(--text-inverse);
       }
     }
   }

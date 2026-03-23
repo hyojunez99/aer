@@ -3,8 +3,8 @@
 
 #footer {
   padding: 100px 40px 40px;
-  background: #111;
-  color: #fff;
+  background: var(--bg-dark);
+  color: var(--text-inverse);
 
   .footer-inner {
     max-width: 1200px;
@@ -21,15 +21,14 @@
 
   .footer-left {
     h2 {
-      font-size: 1.8rem;
-      font-weight: 600;
+      @include font-h1;
       letter-spacing: -0.02em;
     }
 
     p {
+      @include font-body;
       margin-top: 10px;
-      font-size: 0.9rem;
-      color: #aaa;
+      color: var(--text-muted);
     }
   }
 
@@ -39,35 +38,39 @@
     gap: 14px;
 
     a {
-      font-size: 0.9rem;
-      color: #ccc;
+      @include font-link;
+      color: var(--text-muted);
       transition: all 0.3s ease;
+
       &:hover {
-        color: #fff;
-        transform: translateX(5px);
+        color: var(--text-inverse);
+        transform: translateX(4px);
       }
     }
   }
 
   .footer-right {
     p {
-      font-size: 0.9rem;
+      @include font-body;
       margin-bottom: 10px;
     }
 
     span {
-      font-size: 0.9rem;
-      color: #aaa;
+      @include font-sub;
+      color: var(--text-muted);
     }
   }
 
   .footer-bottom {
     margin-top: 80px;
+    padding-top: 20px;
+
+    border-top: 1px solid var(--border-dark);
     text-align: center;
 
     p {
-      font-size: 0.8rem;
-      color: #777;
+      @include font-sub;
+      color: var(--text-muted);
     }
   }
 }

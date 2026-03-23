@@ -1,29 +1,15 @@
-//태블릿 기준 반응형
+
 $tablet: 768px;
-@mixin tablet {
-  @media all and (min-width: $tablet) {
-    @content;
-  }
-}
-
-//데스크탑 기준 반응형
 $desktop: 1024px;
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
 @mixin desktop {
-  @media all and (min-width: $desktop) {
-    @content;
-  }
-}
-
-// 모바일 이하
-@mixin mobile-max {
-  @media all and (max-width: 767px) {
-    @content;
-  }
-}
-
-// 태블릿 이하
-@mixin tablet-max {
-  @media all and (max-width: 1023px) {
+  @media (min-width: $desktop) {
     @content;
   }
 }

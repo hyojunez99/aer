@@ -46,7 +46,7 @@
     "collection": "2026 FW",
     "price": 260000,
     "color": ["beige", "black"],
-    "image": ["Knit-model.png", "knit1-1.png", "knit1-2.png"],
+    "image": ["knit-model.png", "knit1-1.png", "knit1-2.png"],
     "desc": "Soft knitwear crafted with silk blend yarn."
   },
   {

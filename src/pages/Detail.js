@@ -6,7 +6,7 @@ import { CartContext } from "../context/CartContext";
 
 const Detail = () => {
   const { id } = useParams();
-  const { addToCart } = useContext(CartContext); // 🔥 추가
+  const { addToCart } = useContext(CartContext); 
 
   const item = data.find((el) => el.id === Number(id));
 

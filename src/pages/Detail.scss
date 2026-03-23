@@ -5,14 +5,16 @@
 #detail {
   padding: 10rem 2.5rem;
   min-height: 100vh;
-  background: #fff;
+  background: var(--bg-primary);
 
   .detail-inner {
     max-width: 1280px;
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: 1fr;
     gap: 5rem;
+
     @include desktop {
       grid-template-columns: 1.1fr 0.9fr;
       gap: 6rem;
@@ -26,12 +28,13 @@
   .detail-img {
     width: 100%;
     overflow: hidden;
-    background: #f7f7f7;
+    background: var(--bg-secondary);
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+
       transition:
         transform 0.8s ease,
         filter 0.8s ease;
@@ -53,8 +56,10 @@
       height: 90px;
       object-fit: cover;
       cursor: pointer;
+
       opacity: 0.5;
       border: 1px solid transparent;
+
       transition: all 0.3s ease;
 
       &:hover {
@@ -65,7 +70,8 @@
 
     img.active {
       opacity: 1;
-      border: 1px solid #000;
+      border: 1px solid var(--border-dark);
+      transform: scale(1.05);
     }
   }
 
@@ -79,19 +85,20 @@
     h2 {
       @include font-display;
       letter-spacing: -0.02em;
+      color: var(--text-primary);
     }
 
     p {
       @include font-body;
-      color: #666;
+      color: var(--text-secondary);
+
       max-width: 420px;
       line-height: 1.6;
     }
 
     .price {
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: #000;
+      @include font-h3;
+      color: var(--text-primary);
       margin-top: 8px;
     }
 
@@ -99,7 +106,7 @@
       margin-top: 2.5rem;
       padding: 1rem 2.5rem;
 
-      border: 1px solid #000;
+      border: 1px solid var(--border-dark);
       background: transparent;
 
       cursor: pointer;
@@ -107,13 +114,14 @@
 
       @include font-link;
 
+      overflow: hidden;
       transition: all 0.4s ease;
 
       &::before {
         content: "";
         position: absolute;
         inset: 0;
-        background: #000;
+        background: var(--color-black);
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 0.4s ease;
@@ -125,7 +133,7 @@
       }
 
       &:hover {
-        color: #fff;
+        color: var(--text-inverse);
       }
     }
   }
