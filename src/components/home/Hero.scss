@@ -30,22 +30,25 @@
   }
 
   .hero-text {
-    @include flex-layout(column, center, flex-start);
+    @include flex-layout(column, center, center);
     position: absolute;
     top: 50%;
-    left: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
-    height: 100%;
-    padding: 0 5rem;
-    transform: translateY(-50%);
+
+    width: 100%;
+    padding: 0 1.5rem;
+    text-align: center;
 
     h2 {
       @include font-title;
       color: var(--text-inverse);
-      max-width: 900px;
       line-height: 1;
-      overflow: hidden;
       letter-spacing: -0.03em;
+      overflow: hidden;
+
+      font-size: clamp(2rem, 7vw, 3rem);
 
       &:first-child {
         opacity: 0.6;
@@ -60,44 +63,29 @@
     }
   }
 
-  .scroll-down {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-
-    span {
-      font-size: 0.8rem;
-      letter-spacing: 0.2em;
-      color: var(--text-inverse);
-      opacity: 0.7;
-      animation: scrollAnim 1.6s ease-in-out infinite;
-    }
-  }
   .hero-sub {
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
+    align-items: center;
 
     span {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       letter-spacing: 0.15em;
       color: var(--text-inverse);
-      opacity: 0.8;
       transform: translateY(100%);
       opacity: 0;
     }
   }
 
   .hero-cta {
-    margin-top: 2rem;
+    margin-top: 1.8rem;
     display: inline-block;
-    padding: 12px 28px;
+    padding: 10px 24px;
     border: 1px solid var(--text-inverse);
     color: var(--text-inverse);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     transform: translateY(100%);
@@ -107,6 +95,60 @@
     &:hover {
       background: var(--text-inverse);
       color: #000;
+    }
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    span {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      color: var(--text-inverse);
+      opacity: 0.7;
+      animation: scrollAnim 1.6s ease-in-out infinite;
+    }
+  }
+
+  @include tablet {
+    .hero-text {
+      align-items: flex-start;
+      text-align: left;
+
+      left: 80px;
+      transform: translateY(-50%);
+      padding: 0 5rem;
+
+      h2 {
+        font-size: clamp(3rem, 4vw, 5rem);
+        max-width: 900px;
+      }
+    }
+
+    .hero-sub {
+      align-items: flex-start;
+
+      span {
+        font-size: 0.9rem;
+      }
+    }
+
+    .hero-cta {
+      margin-top: 2rem;
+      padding: 12px 28px;
+      font-size: 0.85rem;
+    }
+
+    .scroll-down {
+      bottom: 30px;
+
+      span {
+        font-size: 0.8rem;
+      }
     }
   }
 }
