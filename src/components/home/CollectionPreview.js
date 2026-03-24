@@ -10,9 +10,8 @@ const CollectionPreview = () => {
   const ref = useRef(null);
 
   useGsap(() => {
-    const el = ref.current;
-    staggerItem(el.querySelectorAll(".collection-item"));
-  });
+    staggerItem(".collection-item");
+  }, ref);
 
   return (
     <section id="collection" ref={ref}>
@@ -28,8 +27,9 @@ const CollectionPreview = () => {
               <div className="collection-item">
                 <img
                   src={require(`../../assets/images/${item.image[0]}`)}
-                  alt=""
+                  alt={item.name}
                 />
+
                 <div className="item-info">
                   <p>{item.name}</p>
                   <span>₩{item.price.toLocaleString()}</span>

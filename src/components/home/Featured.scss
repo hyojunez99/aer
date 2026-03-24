@@ -3,80 +3,135 @@
 @use "../../assets/scss/font" as *;
 
 #featured {
-  background: var(--bg-primary);
+  padding: 0;
 
   .featured-hero {
     position: relative;
     height: 80vh;
     overflow: hidden;
 
-    img {
+    img.scale-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transform: scale(1.05);
+      will-change: transform;
     }
 
     &::after {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.35);
+      background: rgba(0, 0, 0, 0.25);
+      z-index: 1;
     }
 
     .hero-text {
       position: absolute;
-      bottom: 60px;
-      left: 60px;
+      top: 50%;
+      left: 80px;
+      transform: translateY(-50%);
       z-index: 2;
-
       color: var(--text-inverse);
 
       h2 {
-        @include font-display;
-        margin-bottom: 12px;
+        font-size: 3rem;
+        margin-bottom: 1rem;
       }
 
       p {
-        @include font-h3;
-        opacity: 0.85;
+        font-size: 1.2rem;
+        opacity: 0.8;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-cta {
+        display: inline-block;
+        padding: 12px 32px;
+        border: 1px solid var(--text-inverse);
+        color: var(--text-inverse);
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: var(--text-inverse);
+          color: #000;
+          transform: scale(1.05);
+        }
       }
     }
   }
 
   .featured-products {
-    max-width: 1200px;
-    margin: 120px auto;
-    padding: 0 40px;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 2rem;
+    margin: 6rem;
 
+    grid-template-columns: 1fr;
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
     }
-
     @include desktop {
       grid-template-columns: repeat(3, 1fr);
     }
 
     .featured-item {
+      position: relative;
+      overflow: hidden;
       cursor: pointer;
 
-      img {
-        width: 100%;
-        transition: transform 0.6s ease;
+      &.size-0 {
+        grid-row: span 2;
+      }
+      &.size-1 {
+        grid-row: span 1;
+      }
+      &.size-2 {
+        grid-row: span 1;
       }
 
-      &:hover img {
-        transform: scale(1.05);
+      .img-wrapper {
+        position: relative;
+        overflow: hidden;
+
+        img.scale-img {
+          width: 100%;
+          display: block;
+          transition:
+            transform 0.6s ease,
+            filter 0.6s ease;
+        }
+
+        .item-overlay {
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.15);
+          opacity: 0;
+          transition: opacity 0.4s ease;
+          pointer-events: none;
+        }
+
+        &:hover img {
+          transform: scale(1.08);
+          filter: brightness(0.9);
+        }
+
+        &:hover .item-overlay {
+          opacity: 1;
+        }
       }
 
       .item-info {
-        margin-top: 14px;
+        position: relative;
+        z-index: 2;
+        margin-top: 1rem;
+        transition: transform 0.4s ease;
 
         p {
           @include font-body;
           color: var(--text-primary);
+          margin-bottom: 0.3rem;
         }
 
         span {
@@ -88,44 +143,55 @@
   }
 
   .featured-look {
-    margin: 120px 0;
+    position: relative;
+    margin: 6rem 0;
+    overflow: hidden;
 
-    img {
+    img.scale-img {
       width: 100%;
-      height: 600px;
-      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.02);
+    }
+
+    .look-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--text-inverse);
+      font-size: 2rem;
+      font-weight: 600;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+
+    &:hover .look-text {
+      opacity: 1;
     }
   }
 
   .featured-cta {
-    text-align: center;
-    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
 
     a {
-      @include font-link;
-      border: 1px solid var(--border-dark);
-      padding: 14px 40px;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.4s ease;
-
-      &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: var(--color-black);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.4s ease;
-        z-index: -1;
-      }
-
-      &:hover::before {
-        transform: scaleX(1);
-      }
+      display: inline-block;
+      padding: 14px 36px;
+      border: 1px solid var(--text-primary);
+      color: var(--text-primary);
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all 0.3s ease;
 
       &:hover {
-        color: var(--text-inverse);
+        color: var(--color-gray-400);
+        transform: scale(1.05);
       }
     }
   }

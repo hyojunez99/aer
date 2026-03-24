@@ -59,7 +59,6 @@
 
     @include desktop {
       grid-template-columns: repeat(3, 1fr);
-      
     }
   }
 
@@ -74,12 +73,11 @@
       transition:
         transform 0.6s ease,
         filter 0.6s ease;
-        
     }
 
     &:hover img {
-      transform: scale(1.05);
-      filter: brightness(0.92);
+      transform: scale(1.03);
+      filter: brightness(0.85);
     }
 
     &:hover .item-info p {

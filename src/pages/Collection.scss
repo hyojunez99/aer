@@ -30,45 +30,41 @@
     @include desktop {
       grid-template-columns: repeat(3, 1fr);
     }
-  }
+    .collection-item {
+      overflow: hidden;
+      cursor: pointer;
 
-  .collection-item {
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: translateY(-4px);
-    }
-
-    img {
-      width: 100%;
-      aspect-ratio: 3 / 4;
-      object-fit: cover;
-      transition:
-        transform 0.6s ease,
-        filter 0.6s ease;
-
-      filter: brightness(0.97);
-    }
-
-    &:hover img {
-      transform: scale(1.05);
-      filter: brightness(0.92);
-    }
-
-    .item-info {
-      margin-top: 1rem;
-
-      p {
-        @include font-body;
-        color: var(--text-primary);
-        margin-bottom: 0.3rem;
+      img {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        transition:
+          transform 0.6s ease,
+          filter 0.6s ease;
       }
 
-      span {
-        @include font-caption;
-        color: var(--text-muted);
+      &:hover img {
+        transform: scale(1.03);
+        filter: brightness(0.85);
+      }
+
+      &:hover .item-info p {
+        opacity: 0.7;
+      }
+
+      .item-info {
+        margin-top: 1rem;
+
+        p {
+          @include font-body;
+          color: var(--text-primary);
+          margin-bottom: 0.3rem;
+        }
+
+        span {
+          @include font-caption;
+          color: var(--text-muted);
+        }
       }
     }
   }

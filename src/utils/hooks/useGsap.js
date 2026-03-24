@@ -1,11 +1,14 @@
 import { useLayoutEffect } from "react";
 import gsap from "gsap";
 
-const useGsap = (callback) => {
+const useGsap = (callback, scopeRef, deps = []) => {
   useLayoutEffect(() => {
-    const ctx = gsap.context(callback);
+    if (!scopeRef?.current) return;
+
+    const ctx = gsap.context(callback, scopeRef);
+
     return () => ctx.revert();
-  }, []);
+  }, deps);
 };
 
 export default useGsap;
